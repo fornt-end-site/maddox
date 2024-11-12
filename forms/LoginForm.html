@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Maddoxpay : Login </title>
+        <!-- bootstrap link -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <!-- custom css -->
+        <link rel="stylesheet" href="../assets/css/custom-css/main.css">
+        <link rel="stylesheet" href="../assets/css/custom-css/form.css">
+    
+    
+        <!-- icons -->
+        <link rel="icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" sizes="32x32" />
+        <link rel="icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" />
+        <!-- poppins gooolefonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    
+        <!-- jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- VALIDATION start CDN -->
+        <link rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css" />
+        <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css" />
+        <script type="text/javascript"
+            src="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+        <!-- VALIDATION end CDN -->
+    
+        <!-- aos animation -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    </head>
+
+
+<body>
+    <div class="forgetpassword-form" >
+        <div class="form-box shadow-lg rounded" data-aos="zoom-in">
+            <div class="image  m-auto pt-3 ">
+                <img src="../assets/images/logo/logo.png" alt="maddox-logo">
+            </div>
+
+            <!-- forms start -->
+            <div class="contact-forms validation" >
+                <div class="form-container ">
+                    <!-- form head -->
+                    <div class="form-head d-flex justify-content-center">
+                        <span> <i class="fa-solid fa-address-book "></i></span>
+                        <h6 class="create-acount  mx-2 ">Sign In Now</h6>
+
+                    </div>
+
+                    <!-- main form star -->
+                    <div class="form-card-wraper">
+
+                        <!-- email  -->
+                        <div class="row ">
+                            <!-- Email -->
+                            <div class="col-12 py-1">
+
+                                <div class="form-group">
+                                    <label for=" emailId" class="scontrol-label pb-1">Enter Email / UserId </label>
+                                    <input id=" emailId" name="emailId" type="text"
+                                        placeholder="Enter email address here" class="form-control required" value="">
+                                </div>
+
+
+                            </div>
+                            <div class="col-12 pt-2">
+                                <div class="form-group">
+                                    <label maxlength="15" for="password" class="control-label"> Enter Password
+                                    </label>
+                                    <input id="password" name="password" type="password"
+                                        placeholder="Enter Password no here" class="form-control required"
+                                        minlength="15" maxlength="15">
+                                    <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- email and mobile end -->
+
+                        <div class="row  pt-3">
+                            <div class="col d-flex justify-content-between ">
+                                <div class="Keeplogin d-flex align-items-center  ">
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" id="Keeplogin" checked>
+                                        <span class="checkmark"></span>
+                                    </div>
+
+                                    <label for="Keeplogin" class="mx-1">Keep me logged
+                                        in</label>
+                                </div>
+                                <a href="./ForgetPassword.html" class="text-center d-block ">Forgot
+                                    Password</a>
+                            </div>
+                        </div>
+
+                        <!-- procces button -->
+                        <div class="row pt-3">
+                            <div class="form-group">
+                                <button class="btn btn-primary w-100 m-auto  rounded-sm">SIGN-IN</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row  pt-3">
+                            <div class="col d-flex justify-content-center">
+                                <span>New to Maddox? </span>
+                                <a href="./CreateAccount.html" class="text-center ps-2 d-block "> Create an
+                                    Account</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main form end -->
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- =====================+++++++++++++  Script Links start ++++++++++++++++++++++++==================== -->
+    <!-- AOS animation js script -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- custom js -->
+    <script src="../assets/js/custom-js/form.js"></script>
+    <!-- custom Validator js -->
+    <script src="../assets/js/custom-js/custom.Validator.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/custom-js/mainCustom.js"></script>
+
+</body>
+
+</html>
+

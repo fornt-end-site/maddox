@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Google Map with Location Border</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWGepgwUrOgcl-pLy2j5GtiOoXdriWrQ8&libraries=places"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <input type="hidden" id="location" placeholder="Enter location (e.g. India Delhi Vasant Vihar)" value="allahabad">
+    <!-- <button onclick="geocodeAndDisplayMap()">Show Map</button> -->
+
+    <style>
+        
+    </style>
+    <div class="map-section ">
+        <style>
+        
+      
+      </style>
+      <!-- back button -->
+        <div class="back-button">
+            <a href="/states/district.html">
+                <img src="/images/left-arrow.png" alt="back">
+            </a>
+        </div>
+        <div id="map"></div>
+
+        <div class="storebox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpsEu-ob0qC-Smg5Y2zH3SuFhphhQQZ_II698Bcl9j3HcAi52mZN0g29xFH1xlaKSlvc&usqp=CAU"
+                alt="staroe image">
+            <h3 class="storename">store name</h3>
+            <p class="storedescription">store description Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                incidunt culpa maxime molestiae alias, pariatur fugit deserunt? Dolorum, alias eius!</p>
+        </div>
+    </div>
+
+    <script>
+        // direct call 
+        window.onload = geocodeAndDisplayMap();
+
+        let map;
+        let featureLayer;
+
+        const stores = [
+            {
+                name: "Store 1",
+                description: "This is Store 1",
+                lat: 28.5545,
+                lng: 77.1998,
+                image: "https://via.placeholder.com/150"
+            },
+            {
+                name: "Store 2",
+                description: "This is Store 2",
+                lat: 28.5623,
+                lng: 77.2069,
+                image: "https://via.placeholder.com/150"
+            },
+            // Add more stores as needed
+        ];
+
+
+        async function initMap(lat, lng, placeId) {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat, lng },
+                zoom: 12,
+                mapId: "87d4078b51304081"
+            });
+
+            featureLayer = map.getFeatureLayer("LOCALITY");
+
+            const featureStyleOptions = {
+                strokeColor: "red",
+                strokeOpacity: 1.0,
+                strokeWeight: 1.0,
+                fillColor: "lightgray",
+                fillOpacity: 0.5,
+            };
+
+            featureLayer.style = (options) => {
+                if (options.feature.placeId === placeId) {
+                    return featureStyleOptions;
+                }
+            };
+
+            new google.maps.Marker({
+                position: { lat, lng },
+                map: map
+            });
+
+            // Add store markers
+            addStoreMarkers();
+        }
+
+        function addStoreMarkers() {
+            stores.forEach(store => {
+                const marker = new google.maps.Marker({
+                    position: { lat: store.lat, lng: store.lng },
+                    map: map,
+                    title: store.name
+                });
+
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div class="info-window">
+                            <h3>${store.name}</h3>
+                            <p>${store.description}</p>
+                            <img src="${store.image}" alt="${store.name}">
+                        </div>
+                    `
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                });
+            });
+        }
+
+        function geocodeAndDisplayMap() {
+            const location = document.getElementById('location').value;
+            const geocoder = new google.maps.Geocoder();
+
+            geocoder.geocode({ address: location }, function (results, status) {
+                if (status === 'OK') {
+                    const result = results[0];
+                    const lat = result.geometry.location.lat();
+                    const lng = result.geometry.location.lng();
+                    const placeId = result.place_id;
+
+                    initMap(lat, lng, placeId);
+                } else {
+                    alert("Geocoding was not successful for the following reason: " + status);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

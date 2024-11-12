@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+:root {
+    --main-col: #3c64b1;
+    --hover-col: #003c95;
+}
+a:hover {
+    color: var(--hover-col);
+}
+
+.btn {
+    background-color: var(--main-col);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--hover-col);
+    color: white;
+
+
+}
+
+.btn:hover i {
+    animation: none;
+}
+
+.registration-form,
+.forgetpassword-form {
+    background-color: var(--main-col);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backButtton {
+    top: 15px;
+    left: 20px;
+    opacity: 0.8.5;
+
+}
+
+.backButtton .btn {
+    padding: 3px 19px;
+    border-radius: 5px;
+
+
+}
+
+.backButtton .btn i {
+    position: static;
+    font-size: small;
+    transform: none;
+}
+
+.backButtton .btn i.fa-beat {
+    animation-name: auto;
+}
+
+.backButtton>.btn:hover i {
+    animation: fa-beat infinite 1s !important;
+}
+
+/* password check eyes css start */
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(11%) !important;
+    cursor: pointer;
+    user-select: none;
+}
+
+.password-toggle-icon i {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--hover-col);
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.password-toggle-icon i:hover {
+    color: var(--main-col);
+}
+
+.form-box .has-error span.password-toggle-icon {
+    display: block !important;
+    top: 26px;
+}
+
+/* login form css */
+
+.Keeplogin input,
+.Keeplogin label {
+    cursor: pointer;
+}
+
+.Keeplogin .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.Keeplogin .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.Keeplogin .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.Keeplogin .checkbox-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.Keeplogin .checkbox-container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.Keeplogin .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.Keeplogin .checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.Keeplogin .checkbox-container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* login form css end*/
+
+
+/* forgetpassword form */
+.forgetpassword-form .form-box {
+    max-width: 30%;
+    margin: auto;
+}
+
+.forgetpassword-form .form-box .image {
+    width: 50%;
+
+}
+
+.forgetpassword-form .form-box .image img {
+    width: 100%;
+
+}
+
+.forgetpassword-form button {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* forgetpassword form  end */
+
+
+
+.form-box {
+    background-color: white;
+    width: 90%;
+}
+
+.form-box .form-group {
+    position: relative;
+}
+
+.form-box .has-error {
+    color: red;
+}
+
+.form-box .has-error .form-control {
+    color: red;
+    border: 1px solid red;
+    box-shadow: none;
+}
+
+.form-box .has-error .form-control:focus {
+    color: red;
+    box-shadow: none;
+    border-bottom: 1px solid red;
+}
+
+.form-box .has-success {
+    color: green;
+}
+
+
+.form-box .has-success .form-control {
+    color: green;
+    border: 1px solid green;
+    box-shadow: none;
+}
+
+.form-box .has-success .form-control:focus {
+    color: green;
+    box-shadow: none;
+    border-bottom: 1px solid green;
+}
+
+/* slider  image*/
+
+.slider-box,
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+/* input side */
+
+.registration-form .form-box .image {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
+.form-box .contact-forms {
+    background-color: #fff;
+    padding: 20px 15px;
+    width: 97%;
+    margin: auto;
+}
+
+.form-box form h3 {
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 22px;
+    color: #3C64B1;
+}
+
+.form-box .contact-forms,
+.form-box input:not([type='checkbox']) {
+    color: var(--main-col);
+    font-size: 13px;
+}
+
+.form-box .contact-forms .form-card-wraper {
+    background: #F9F9F9;
+    border: 1px solid #E4E3E3;
+    border-radius: 5px;
+    padding: 1.3em 1em;
+}
+
+.form-card-wraper .form-group .verifying-email,
+.form-card-wraper .form-group .verifying-mobile {
+    display: none;
+    float: right;
+    margin: 0px 10px;
+    color: #ff0000b5;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.form-box .has-success .verifying-email,
+.form-box .has-success .verifying-mobile {
+    display: block;
+
+}
+
+.form-card-wraper .form-group .verifying-email:active,
+.form-card-wraper .form-group .verifying-mobile:active {
+    color: #ff0000b5;
+    transform: scale(0.9);
+}
+
+.form-box .form-control:focus {
+    border-bottom: 1px solid var(--main-col);
+    -webkit-box-shadow: 0px 1px 4px 0px var(--main-col) inset;
+    -moz-box-shadow: 0px 1px 4px 0px var(--main-col) inset;
+    box-shadow: 0px 1px 4px 0px var(--main-col) inset;
+    outline-color: var(--main-col);
+    color: var(--main-col);
+    font-size: 13px;
+}
+
+.form-box .form-group span {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}
+
+/* verify section start*/
+.verify-email-container,
+.verify-mobile-container {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    display: none;
+    transition: all .5s ease;
+}
+
+.verify-email-container .left-side .input-filed .inputs .form-control,
+.verify-mobile-container .left-side .input-filed .inputs .form-control {
+    margin: 1px 3px;
+    padding: 3px;
+    font-weight: 500;
+    width: 26px;
+}
+
+.form-box .has-error span,
+.form-box .has-error+.verify-email-container {
+    display: none !important;
+}
+
+.verify-email-container .right-side,
+.verify-mobile-container .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    cursor: pointer;
+    text-align: end;
+}
+
+.right-side .confirm {
+    background-color: #3164c3;
+    color: white;
+    text-align: center;
+    padding: 1px 9px 2px 8px;
+    border-radius: 5px;
+}
+
+.right-side .confirm,
+.right-side .Resend-otp {
+    text-align: center;
+
+}
+
+.right-side .confirm:active,
+.right-side .Resend-otp:active {
+    transform: scale(0.9);
+}
+
+
+.emailcheckicon,
+.mobilecheckicon {
+    display: none;
+    transition: all .3s ease;
+}
+
+/* hide and show  email and mobile container */
+.verify-class {
+    height: auto;
+    padding: 2px 0px;
+    overflow: visible;
+    opacity: 1;
+    display: block;
+    transition: all .5s ease;
+
+
+}
+
+.error-message {
+    font-size: 10px;
+}
+
+
+/* Store Address  css  */
+.fa-solid {
+    font-size: 13px;
+    line-height: 20px !important;
+}
+
+.select2 {
+    font-size: 13px;
+    color: gray;
+}
+
+@media (max-width:700px) {
+    .forgetpassword-form .form-box {
+        max-width: 100%;
+    }
+
+    .registration-form,
+    .forgetpassword-form {
+        padding: 40px 10px;
+        height: auto;
+    }
+}
+@media (min-height:600px) {
+    .registration-form,
+    .forgetpassword-form {
+        height: 100%;
+
+    }
+}

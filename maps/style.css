@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* back button start */
+.back-button {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  left: 0px;
+  background-color: white;
+  width: 28px;
+  height: 40px;
+  display: flex;
+}
+
+.back-button a {
+  display: block;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  width: 24px;
+  height: 26px;
+  transition: all .2s ease;
+  margin: auto;
+  background-color: #00000061;
+}
+
+.back-button a:active {
+  transform: scale(0.9);
+}
+
+.back-button a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* back button end */
+
+/* india map img */
+.india-map-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  /* box-shadow: 0px 0px 10px -4px #c51313b4; */
+  border: 1px solid #c51313b4;
+  cursor: pointer;
+  /* border-radius: 5px; */
+}
+
+.india-map-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+}
+
+/* india map img */
+.my-map {
+  width: 790px;
+  height: 640px;
+  position: relative;
+
+}
+
+.my-map h3 {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: rgb(170, 166, 166);
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(170, 166, 166);
+  text-shadow: -1px 1px 0px #fff7f7, 0px 0px 1px white;
+  letter-spacing: 3px;
+
+}
+
+svg {
+  background-color: #e0f2f1;
+}
+
+
+#map {
+  width: 60% !important;
+  height: 641px !important;
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  pointer-events: none;
+  display: none;
+  white-space: nowrap;
+}
+
+.text {
+  font-family: 'Tahoma';
+  font-size: 9px;
+  fill: #6b6b6b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+
+}
+
+path {
+  stroke-width: .8px;
+  stroke: #8b8b8b;
+  /* fill:azure; */
+}
+
+a:hover path {
+  stroke: rgba(100, 100, 100, 0.781);
+  fill: #ffc172;
+}
+
+a:hover text {
+  fill: #065ec3;
+
+}
+
+/* marker info section */
+.info-window-content {
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 13px;
+}
+
+.info-window-content h3 {
+  color: red;
+}
+
+.info-window-content .description {
+  color: rgb(59, 58, 58);
+}
+
+.info-window-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-window-content .description {
+  margin: 10px 0;
+}
+
+/* max nubmer side information */
+.maxnum {
+  width: 130px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2;
+  line-height: 16px;
+  font-family: cursive;
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 10px;
+}
+
+.color {
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  border: 1px solid lightgray;
+}
+
+.num1 .color {
+  background-color: #f9d5ab;
+
+}
+
+.num2 .color {
+  background-color: blanchedalmond;
+
+}
+
+.num3 .color {
+  background-color: #f4fbcc;
+
+}
+
+.num4 .color {
+
+  background-color: #90ee90;
+}
+
+.num5 .color {
+  background-color: lightblue;
+
+}
+
+/* max nubmer side information */
+
+
+/* right site coverage information start */
+.map-section {
+  display: flex;
+}
+
+.text-right {
+  padding: 13px 15px 0px 15px;
+}
+
+.text-right h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #3C64B1;
+  line-height: 50px;
+}
+
+.text-right p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding: 15px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.coverage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 8px 0px;
+}
+
+.coverage .Transacting,
+.coverage .Covered-area {
+  width: 50%;
+}
+
+.coverage .Transacting {
+  margin: 0 100px 0px 0px;
+}
+
+.coverage .image {
+  width: 80px;
+  height: 78px;
+  margin: auto;
+}
+
+.coverage .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.coverage .number {
+  color: red;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+}
+
+.coverage .text {
+  font-size: 20px;
+  color: #585b5f;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* right site coverage information end */
+
+
+/* google map css stores start */
+.map-section {
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.storebox {
+  background-color: rgb(237, 237, 238);
+  width: 40%;
+  padding: 20px;
+  position: absolute;
+  height: 100%;
+  right: 0%;
+}
+
+.storebox .storename {
+  font-size: 20px;
+  padding: 8px 0px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.storebox .storedescription {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.storebox img {
+  width: 100%;
+  height: 50%;
+}
+/* end */

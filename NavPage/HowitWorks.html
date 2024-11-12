@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MaddoxPay : How it Works</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../assets/css/custom-css/main.css">
+
+    <!-- icons -->
+    <link rel="icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" sizes="32x32" />
+    <link rel="icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" />
+    <!-- poppins gooolefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- VALIDATION start CDN -->
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+    <!-- VALIDATION end CDN -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- nav start -->
+    <nav class="nav ">
+        <div class="container  d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo/logo.png" id="image">
+                </a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="active" href="./HowitWorks.html">How it works</a></li>
+                    <li><a href="./AboutUs.html">About Us</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./Contact.html">Contact Us</a></li>
+                    <li><a href="./IncomeCalculator.html">Income Calculator</a></li>
+                    <li class="link">
+                        <a class="btn btn-outline-primary" href="../forms/LoginForm.html" role="button">Login Us</a>
+                        <a class="btn btn-primary" href="../forms/CreateAccount.html" role="button">Register Now</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- TopSpace -->
+    <div class="TopSpace container p-0 m-auto"></div>
+    <!-- TopSpace -->
+
+    <!-- title head -->
+    <div class=" container m-auto" data-aos="fade-up">
+        <div class="titlehead container  py-3  px-4">
+            <div class="row align-items-baseline ">
+                <div class="col-md-3 ">
+                    <div class="heading">
+                        <h1 class="text-primary">How It Works </h1>
+                    </div>
+                    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb justify-content-start m-0">
+                            <li class="breadcrumb-item">
+                                <a class="text-primary text-decoration-none" href="../index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                How It Works
+                            </li>
+                        </ol>
+                    </nav>
+
+                </div>
+                <div class="col-md-8 offset-md-1 ">
+                    <div class="headpara text-end text-primary">
+                        <h2>Become a Maddox member in one simple step - choose the service you want to provide, and
+                            start earning with our training, help, and support!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- title head -->
+
+
+    <style>
+     
+
+        .box {
+            overflow-y: auto;
+        }
+
+        .box,
+        .iframehight {
+            height: 400px !important;
+
+        }
+
+        .textbox {
+            transition: all 1s ease;
+
+        }
+
+        .iframe {
+            transition: all 1s ease-in-out;
+            height: 500px;
+
+        }
+
+        .sno {
+            background-color: var(--main-col);
+            border-radius: 50%;
+            text-align: center;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            color: white;
+        }
+
+        .infomation ul li::marker {
+            color: var(--main-col);
+           
+        }
+       
+    </style>
+    <main class="container HowitWorks p-0 m-auto" data-aos="zoom-in">
+        <div class="container py-4  ">
+            <div class="row">
+
+                <div class="col-md-12  iframe ">
+                    <iframe width="100%" height="100%" src="//www.youtube.com/embed/cxYlK4KsHf4?autoplay=1&mute=1"
+                        name="youtube embed" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <div class="col textbox d-none">
+                    <div class="box border shadow-sm rounded">
+                        <ul class="list-unstyled p-2">
+                            <li class=" p-1 my-2 bg-body-tertiary">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            01
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/register.png"
+                                                alt="register">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">Register</h5>
+                                        <ul>
+                                            <li>
+                                                <p>Click on the register button and create your account. Your maddox ID
+                                                    will be created and shared with you immediately.</p>
+                                            </li>
+                                            <li>
+                                                <p>You are one step closer to earning more! </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 ">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            02
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/browes service.png"
+                                                alt="browes service">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">Browse Services</h5>
+                                        <ul>
+                                            <li>
+                                                <p>Once you have registered, take a look at the services we offer. You
+                                                    can view them here too.</p>
+                                            </li>
+                                            <li>
+                                                <p>If you want to know more about the services you can also call
+                                                    9311622159 </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 bg-body-tertiary">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            03
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/choose service.png"
+                                                alt="choose service">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">
+                                            Choose the service</h5>
+                                        <ul>
+                                            <li>
+                                                <p>Choose the service you want to provide to your customers by clicking
+                                                    on the purchase service option. Each of the services has a different
+                                                    price, some are free too!</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 ">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            04
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/payservies.png"
+                                                alt="pay servies">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">Pay for the service </h5>
+                                        <ul>
+                                            <li>
+                                                <p>Pay for the services by clicking on activate now option and make the
+                                                    payment using the wallet.</p>
+                                            </li>
+                                            <li>
+                                                <p>If you want help in paying for the service you can also call
+                                                    9311622159 </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 bg-body-tertiary">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            05
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/traides.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">
+                                            Get Trained by Maddox experts!</h5>
+                                        <ul>
+                                            <li>
+                                                <p>Our team will contact you to set a time for the training of the new
+                                                    service. We will ensure you know everything about the service and
+                                                    you can start using it without any problems</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 ">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            06
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/startearning.png"
+                                                alt="startearning">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">Start earning more! </h5>
+                                        <ul>
+                                            <li>
+                                                <p>Tell your walkin customers about the service and start earning!</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 bg-body-tertiary">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            07
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/problems.png"
+                                                alt="problems">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">
+                                            Facing any problem? We support you!</h5>
+                                        <ul>
+                                            <li>
+                                                <p>If you have any queries about the service or if you have any
+                                                    difficulty, call us at 9311622159. We will be happy to help you all
+                                                    days of the week!</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" p-1 my-2 ">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-1  ">
+                                        <div class="sno">
+                                            08
+                                        </div>
+                                    </div>
+                                    <div class="col-2 icon">
+                                        <div class="image">
+                                            <img src="../assets/images/icons/startearning.png"
+                                                alt="start earning">
+                                        </div>
+                                    </div>
+                                    <div class="col infomation">
+                                        <h5 class="text-primary">
+                                            Start earning!</h5>
+                                      
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <script>
+        // scroll fn ===============START
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+
+                $('.HowitWorks .iframe').removeClass('col-md-12');
+                $('.HowitWorks .iframe').addClass('iframehight');
+                $('.HowitWorks .iframe').addClass('col-md-4');
+                $('.HowitWorks .iframe').css(" height", "100%");
+                $('.HowitWorks .textbox').removeClass('d-none ');
+                console.log("OK");
+
+            } else {
+                $('.HowitWorks .iframe').removeClass('col-md-4 ');
+                $('.HowitWorks .iframe').addClass('col-md-12');
+                $('.HowitWorks .textbox').addClass('d-none ');
+                $('.HowitWorks .iframe').removeClass('iframehight');
+
+            }
+        });
+        // scroll fn ===============END
+
+    </script>
+
+ 
+
+
+        <!-- footer start -->
+        <footer data-aos="fade-down">
+            <!-- topfooterImag -->
+            <div class="row m-0 topfooterImag container p-0 pt-4 m-auto">
+                <div class="col">
+                    <div class="image">
+                        <img src="../assets/images/footer/fotter-image.png" alt="Footer Image">
+                    </div>
+                </div>
+            </div>
+            <!-- topfooterImag End -->
+    
+            <!-- Middlefooter start  -->
+            <div class="row m-0 Middlefooter bg-primary container p-0 m-auto">
+                <div class="col ">
+                    <div class="container py-5 h-100 ">
+                        <div class="row  m-0 h-100">
+                            <div class="col-md-4 ps-md-4 ps-0 ">
+                                <div class="image">
+                                    <img src="../assets/images/logo/white-logo.png" alt="Logo">
+                                </div>
+                                <div class="comp-info">
+                                    <p>Maddox Consultancy Services Private Limited is a B2B service provider in urban and
+                                        rural area of India.</p>
+                                </div>
+                                <div class="playstoreImag">
+                                    <div class="image">
+                                        <img src="../assets/images/footer/google-play-button1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-md-7  p-1">
+                                        <div class="SupportHelp">
+                                            <div class="title text-white pt-0 ps-0">Support & Help</div>
+                                            <ul class="list-unstyled ">
+                                                <li class="py-1"><a href="./faq.html"
+                                                        class="text-white text-decoration-none ">FAQ</a></li>
+                                                <li class="py-1"><a href="mailto:msupport@maddoxpay.com" class="text-white text-decoration-none ">Email:
+                                                        msupport@maddoxpay.com</a></li>
+                                                <li class="py-1"><a href="tel:8062740130" class="text-white text-decoration-none ">Tel:
+                                                        +91-8062740130</a>
+                                                </li>
+                                                <!-- <li><a href="#" class="text-white text-decoration-none ">home</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5  ps-md-4 ps-0">
+                                        <div class="links">
+                                            <div class="title text-white pt-0 ps-0">Maddox</div>
+                                            <ul class="list-unstyled ">
+                                                
+                                                <li class="py-1"><a href="./NavPage/AboutUs.html" class="text-white text-decoration-none ">
+                                                        About Us
+                                                    </a></li>
+                                                <li class="py-1"><a href="./NavPage/service.html" class="text-white text-decoration-none ">
+                                                        Services
+                                                    </a></li>
+                                                <li class="py-1"><a href="./NavPage/Contact.html" class="text-white text-decoration-none ">
+                                                        Contact Us
+                                                    </a></li>
+                                                <li class="py-1"><a href="./forms/LoginForm.html" class="text-white text-decoration-none ">
+                                                        Login
+                                                    </a></li>
+                                                    <li class="py-1"><a href="./Refund-Return.html" class="text-white text-decoration-none ">
+                                                        Refund & Return policy
+                                                    </a></li>
+                                                   
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4  ps-md-4 ps-0 ">
+                                <div class="Subscribe">
+                                    <div class="title text-white pt-0 ps-0"> Subscribe to Maddox!</div>
+                                    <div class="info">
+                                        <p>Get promotions, inspiration and the latest news about brands and products
+                                            directly
+                                            in your inbox.</p>
+                                    </div>
+                                    <div class="emailInputFeid d-flex">
+                                        <div class="input-group position-relative">
+                                            <div class="contact-forms d-flex  footerEmail">
+                                                <div class="form-group me-2">
+                                                    <input id=" emailId" name="emailId" type="text"
+                                                        placeholder="Enter email address here"
+                                                        class="form-control ps-4 required" value="">
+                                                    <!-- <i class="fa fa-envelope position-absolute"></i> -->
+                                                    <i class="fa-regular fa-envelope "></i>
+                                                </div>
+                                                <button type="submit" class="btn btn-outline-green py-0"
+                                                    onclick="subscribe()">Subscribe</button>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!-- Middlefooter end  -->
+    
+            <!-- Bootomfooter start -->
+            <div class="row m-0 Bootomfooter p-3 bg-body-tertiary container p-0 m-auto">
+                <div class="col-md-3">
+                    <div class="link d-flex align-items-center justify-content-center">
+                        <a href="./term-and-condition.html" class="text-dark px-3 text-decoration-none">Terms of Use</a>
+                        <a href="./privacyPolicy.html" class="text-dark px-3 text-decoration-none"> Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-9 d-md-flex justify-content-md-end text-center">
+                    <div class="copyright ">© 2023 Maddox Consultancy Services Private Limited. All rights
+                        reserved. |</div>
+                    <div class="devcredits  "> Designed & Developed by code</div>
+                </div>
+            </div>
+            <!-- bootomfooter end -->
+    
+    
+        </footer>
+        <!-- footer end -->
+        <!-- =====================+++++++++++++  Script Links start ++++++++++++++++++++++++==================== -->
+        <!-- AOS animation js script -->
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        
+        <!-- Validator js -->
+        <script src="../assets/js/custom-js/custom.Validator.js"></script>
+        <!-- main custom js -->
+        <script src="../assets/js/custom-js/mainCustom.js"></script>
+    
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maddoxpay : Registration</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="../assets/css/custom-css/main.css"> -->
+    <link rel="stylesheet" href="../assets/css/custom-css/form.css">
+
+
+    <!-- icons -->
+    <link rel="icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" sizes="32x32" />
+    <link rel="icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.maddoxpay.com/wp-content/uploads/2022/05/Group-7056.png" />
+    <!-- poppins gooolefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- VALIDATION start CDN -->
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+    <!-- VALIDATION end CDN -->
+
+</head>
+
+<body>
+    <div class="registration-form ">
+        <div class="form-box shadow-lg rounded">
+            <div class="row m-0">
+                <div class="col-md-7 d-none d-md-block p-0">
+                    <div class="slider-box ">
+                        <div id="carouselExampleCaptions" class="carousel slide  rounded-start">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner shadow-lg ">
+                                <div class="carousel-item active">
+                                    <img src="../assets/images/form/form-img (1).jpg"
+                                        class="d-block w-100 h-100 rounded-start " alt="form-img">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Welcome to Registration Form</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/form/form-img (2).jpg"
+                                        class="d-block w-100 h-100 rounded-start  " alt="form-img">
+                                    <div class="carousel-caption  d-none d-md-block">
+                                        <h5>Register and get 10% Discount</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/form/form-img (3).jpg"
+                                        class="d-block w-100 h-100 rounded-start " alt="form-img">
+                                    <div class="carousel-caption   d-none d-md-block">
+                                        <h5>Already Register the SignIn</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 p-0  ">
+                    <div class="image  m-auto pt-3 ">
+                        <img src="../assets/images/logo/logo.png" alt="maddox-logo">
+                    </div>
+
+                    <!-- forms start -->
+                    <div class="contact-forms validation">
+                        <div class="form-container ">
+                            <!-- form head -->
+                            <div class="form-head d-flex">
+                                <span> <i class="fa fa-address-card-o"></i></span>
+                                <h6 class="create-acount  mx-2 ">Create an Account </h6>
+                            </div>
+                            <!-- main form star -->
+                            <div class="form-card-wraper">
+                                <!-- names -->
+                                <div class="row ">
+                                    <!-- first name -->
+                                    <div class="col-md-6 pt-2">
+                                        <div class="form-group">
+                                            <label for="firstName" class="control-label mb-1">First Name</label>
+                                            <input maxlength="25" onkeydown="return /[a-z]/i.test(event.key)"
+                                                type="text" name="firstName" id="firstName"
+                                                class="form-control input-md" placeholder="Enter First name here"
+                                                value="">
+                                        </div>
+
+                                    </div>
+                                    <!-- second name -->
+                                    <div class="col-md-6 pt-2">
+                                        <div class="form-group">
+                                            <label for="lastName" class="control-label mb-1">Last Name</label>
+
+                                            <input maxlength="25" onkeydown="return /[a-z]/i.test(event.key)"
+                                                type="text" name="lastName" id="lastName" class="form-control input-md"
+                                                placeholder="Enter Last name here" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- email and mobile -->
+                                <div class="row ">
+                                    <!-- Email -->
+                                    <div class="col-12 pt-2">
+                                        <div class="form-group">
+
+                                            <label for=" emailId" class="scontrol-label mb-1">Email *</label>
+
+                                            <div class="position-relative">
+                                                <input id=" emailId" name="emailId" type="text"
+                                                    placeholder="Enter email address here" class="form-control required"
+                                                    value="">
+                                                <span class="emailcheckicon"><i
+                                                        class="fa-solid fa-circle-check text-success  "></i></span>
+                                            </div>
+
+                                            <div class="verifying-email" onclick="email_verify()">Verify</div>
+                                        </div>
+                                        <!-- verify-email-container -->
+
+                                        <div class="verify-email-container px-2 pt-2">
+                                            <div class="row">
+                                                <div class=" col-5 left-side">
+                                                    <div class="date">0:45s</div>
+                                                    <div class="input-filed w-100">
+                                                        <div id="otp"
+                                                            class="inputs d-flex flex-row justify-content-between ">
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="first" maxlength="1" />
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="second" maxlength="1" />
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="third" maxlength="1" />
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="fourth" maxlength="1" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 right-side ">
+                                                    <div class="Resend-otp text-danger">Resend OTP</div>
+                                                    <div class="confirm  " onclick="emailconfirm()"> confirm
+                                                    </div>
+                                                </div>
+                                                <div class="error-message text-danger">error-message show</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- verify-email-container end -->
+
+                                    </div>
+                                    <!-- mobile -->
+                                    <div class="col-12 pt-2">
+                                        <div class="form-group">
+                                            <label maxlength="10" for="mobile" class="control-label mb-1">Mobile
+                                                *</label>
+
+                                            <div class="position-relative">
+                                                <input id="mobile" name="mobile" type="text"
+                                                    placeholder="Enter mobile no here" class="form-control required"
+                                                    minlength="10" maxlength="10">
+                                                <span class="mobilecheckicon"><i
+                                                        class="fa-solid fa-circle-check text-success "></i></span>
+                                            </div>
+                                            <div class="verifying-mobile" onclick="mobile_verify()">Verify</div>
+
+                                        </div>
+                                        <!-- verify-mobile-container -->
+                                        <div class="verify-mobile-container px-2  pt-2 ">
+                                            <div class="row">
+                                                <div class=" col-5 left-side">
+                                                    <div class="date">0:45s</div>
+                                                    <div class="input-filed w-100">
+                                                        <div id="otp"
+                                                            class="inputs d-flex flex-row justify-content-between ">
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="first" maxlength="1" />
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="second" maxlength="1" />
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="third" maxlength="1" />
+                                                            <input class=" text-center form-control rounded" type="text"
+                                                                id="fourth" maxlength="1" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 right-side">
+                                                    <div class="Resend-otp text-danger">Resend OTP</div>
+                                                    <div class="confirm " onclick="mobileconfirm()"> confirm
+                                                    </div>
+                                                </div>
+                                                <div class="error-message text-danger">error-message show</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- verify-mobile-container end -->
+                                    </div>
+                                </div>
+                                <!-- email and mobile end -->
+                                <!-- passwords -->
+                                <div class="row ">
+                                    <div class="col-12 pt-2">
+                                        <div class="form-group">
+                                            <label maxlength="10" for="password" class="control-label mb-1">Password
+                                                *</label>
+                                            <input id="password" name="password" type="password"
+                                                placeholder="Enter Password no here" class="form-control required"
+                                                minlength="10" maxlength="10">
+                                            <span class="password-toggle-icon"><i class="fa fa-eye"
+                                                    aria-hidden="true"></i></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-2">
+                                        <div class="form-group">
+                                            <label maxlength="10" for="password_confirm" class="control-label mb-1">
+                                                Confirm Password
+                                                *</label>
+                                            <input id="password_confirm" name="password_confirm" type="password"
+                                                placeholder="Enter Confirm Password no here"
+                                                class="form-control required" minlength="10" maxlength="10">
+                                            <div class="passwordError"></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- procces button -->
+                                <div class="row p-0 pt-3">
+                                    <div class="form-group">
+                                        <button class="btn w-100  rounded-sm"><a href="./CreateAccountAddress.html"
+                                                class="text-white d-block text-decoration-none">Next</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main form end -->
+                        </div>
+                    </div>
+
+
+                    <!-- forms end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====================+++++++++++++  Script Links start ++++++++++++++++++++++++==================== -->
+    <!-- custom js -->
+    <script src="../assets/js/custom-js/form.js"></script>
+    <!-- custom Validator js -->
+    <script src="../assets/js/custom-js/custom.Validator.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+
+</html>
